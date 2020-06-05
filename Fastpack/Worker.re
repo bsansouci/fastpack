@@ -731,7 +731,7 @@ let start = ({init, input, output, serveForever}) => {
               source:
                 source
                 ++ Printf.sprintf(
-                     "\\n//# sourceURL=fpack:///%s",
+                     "\\n//# sourceURL=%s",
                      location_str |> CCString.replace(~sub="\\", ~by="/"),
                    ),
               static_dependencies,
